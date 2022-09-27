@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+
+
+
+:root{
+    --selected: #6feaf6;
+    --text-color: #777;
+    --white: #fff;
+    --dark-text: #1c2042;
+}
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    color: var(--white);
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+
+.movie-container{
+margin: 1.25rem;
+}
+
+#movie{
+    background-color: var(--white);
+    padding: 0.2rem 0.6rem;
+    border: 0;
+    font-size: 1rem;
+    border-radius: 0.4rem;
+    margin-left: 0.5rem;
+    color: var(--dark-text);
+    appearance: none;
+}
+.seat{
+    background-color: var(--white);
+    height:1.5rem;
+    width: 1.5rem;
+    /*background-image:url(/seat2.png) ;*/
+    background-size: contain ;
+    margin: 0.75rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+
+}
+
+.seat.selected{
+    background-color: green;
+}
+
+.seat.occupied{
+    background-color: red;
+}
+
+.showcase-container{
+    background-color: rgba(129, 198, 238, 0.1);
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.5rem;
+    min-width: 15.5rem;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    
+}
+
+.showcase-container li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    padding: 5px;
+    
+    
+}
+
+.showcase-container li small{
+    margin-left: 4px;
+}
+
+.screen-container{
+    width: 21rem;
+    perspective: 1000px;
+    margin-top: 1.5rem 0;
+}
+
+.screen{
+    background-color: var(--white);
+    height: 7rem;
+    width: 100%;
+   transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+.row{
+    display: flex;
+}
+
+.discription{
+    margin: 0.6rem 0;
+}
+
+.bold{
+    font-weight: 700;
+}
