@@ -78,6 +78,25 @@ margin: 1.25rem;
     background-color: red;
 }
 
+
+.seat:hover{
+    cursor: pointer;
+    
+}
+.showcase-container .seat:hover{
+    cursor: default;
+    
+}
+.seat.occupied:hover{
+    cursor: default;
+}
+.seat:nth-of-type(3){
+    margin-left: 1.5rem;
+}
+.seat:nth-last-of-type(3){
+    margin-left:1.5rem; 
+}
+
 .showcase-container{
     background-color: rgba(129, 198, 238, 0.1);
     padding: 0.3rem 0.6rem;
