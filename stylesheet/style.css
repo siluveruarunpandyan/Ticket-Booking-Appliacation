@@ -48,7 +48,7 @@ img{
 margin: 1.25rem;
 }
 
-#movie{
+#movies{
     background-color: var(--white);
     padding: 0.2rem 0.6rem;
     border: 0;
@@ -85,6 +85,7 @@ margin: 1.25rem;
 }
 .showcase-container .seat:hover{
     cursor: default;
+   
     
 }
 .seat.occupied:hover{
